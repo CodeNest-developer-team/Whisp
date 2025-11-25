@@ -1,0 +1,40 @@
+/* Blue themed layout */
+*{box-sizing:border-box;font-family:Segoe UI, Roboto, Arial, sans-serif}
+body,html,#app{height:100%;margin:0;background:linear-gradient(180deg,#e6f0ff,#f7fbff)}
+#app{display:grid;grid-template-columns:240px 1fr 360px;grid-gap:14px;padding:14px}
+aside{background:linear-gradient(180deg,#ffffff,#f1f7ff);border-radius:10px;padding:14px;overflow:auto;border:1px solid #d6e6ff}
+main{background:#ffffff;border-radius:10px;padding:16px;overflow:auto;border:1px solid #d7e8ff}
+
+/* Left column */
+#left h2{color:#1b4f9c;margin:0 0 8px 0}
+#user-box input{width:100%}
+#user-box button{background:#0f62d0}
+#servers .server-item{padding:8px;border-radius:6px;margin-bottom:6px;background:transparent}
+#servers .server-item:hover{background:#e8f1ff}
+#servers .server-item div{line-height:1.2}
+#servers .server-item div:nth-child(2){opacity:0.9;font-size:12px}
+#create-server{width:100%;margin-top:8px;padding:8px;background:#1b6be0;color:#fff;border:none;border-radius:6px;cursor:pointer}
+
+#dms div{padding:6px;border-radius:6px;margin-bottom:6px}
+#dms div:hover{background:#e8f1ff;cursor:pointer}
+
+/* Timeline */
+#timeline h2{color:#0f3f84}
+#post-form{display:flex;gap:8px;margin-bottom:12px}
+#post-form input{padding:8px;border:1px solid #cfe1ff;border-radius:6px}
+#post-form button{padding:8px 12px;background:#1b6be0;color:#fff;border:none;border-radius:6px}
+#posts{list-style:none;padding:0}
+.post{border-bottom:1px solid #eef6ff;padding:10px 0}
+
+/* Right / Chat */
+#chat-header{font-weight:600;color:#0f3f84;margin-bottom:8px}
+.messages{height:62vh;overflow:auto;border:1px solid #dfeeff;padding:10px;border-radius:8px;background:linear-gradient(180deg,#ffffff,#f7fbff)}
+.message{margin-bottom:8px;padding:6px 8px;border-radius:6px;background:#eef6ff}
+#chat-form{display:flex;margin-top:10px;gap:8px}
+#chat-input{flex:1;padding:10px;border:1px solid #cfe1ff;border-radius:6px}
+#chat-form button{padding:8px 12px;background:#1b6be0;color:#fff;border:none;border-radius:6px}
+
+/* small screens */
+@media (max-width:900px){
+	#app{grid-template-columns:1fr;grid-auto-rows:auto}
+}

@@ -1,0 +1,18 @@
+{
+  "users": [],
+  "servers": [
+    {
+      "id": "1764050213646",
+      "name": "New Server",
+      "channels": [
+        {
+          "id": "general",
+          "name": "general"
+        }
+      ],
+      "messages": []
+    }
+  ],
+  "timeline": [],
+  "dms": []
+}
